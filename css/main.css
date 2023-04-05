@@ -1,0 +1,115 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: hsl(0, 100%, 74%) url('../images/bg-intro-mobile.png');
+}
+
+.top{
+    color: white;
+    text-align: center;
+    padding: 3em 1.5em 2em 1.5em;
+}
+
+.trial-message{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    color: white;
+    margin: 0 2em 2em 2em;
+    border-radius: 0.5em;
+    padding: 1.5em 3em;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.trial-text{
+    font-weight: 700;
+}
+
+.form-container{
+    background-color: white;
+    border-radius: 0.5em;
+    margin: 0 2em;
+    padding: 1.2em;
+    text-align: center;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding: 1.2em 1em;
+    margin: 0 0 1.2em;
+    border: 0.5px solid hsl(246, 25%, 77%);
+    border-radius: 0.5em;
+    font-weight: 700;    
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 1px solid hsl(249, 10%, 26%);
+
+}
+
+input[type=button]{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(56, 204, 140);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.5em;
+    border: none;
+    padding: 1.3em 2em;
+    box-shadow: 0px 3px 0px rgba(12, 144, 87, 0.2);
+}
+
+.tos-message{
+    font-size: x-small;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    padding: 0 2em;
+}
+
+.tos{
+    font-weight: 700;
+    color: hsl(0, 100%, 74%);
+}
