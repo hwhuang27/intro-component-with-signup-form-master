@@ -42,7 +42,7 @@ body{
     background: hsl(0, 100%, 74%) url('../images/bg-intro-mobile.png');
 }
 
-.top{
+.left-col{
     color: white;
     text-align: center;
     padding: 3em 1.5em 2em 1.5em;
@@ -62,10 +62,15 @@ body{
     font-weight: 700;
 }
 
+.right-col{
+    max-width: 500px;
+    margin: auto;
+}
+
 .form-container{
     background-color: white;
     border-radius: 0.5em;
-    margin: 0 2em;
+    margin: 0 2em 3em;
     padding: 1.2em;
     text-align: center;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
@@ -95,11 +100,20 @@ input[type=button]{
     text-align: center;
     color: white;
     font-weight: 700;
+    font-size: 16px;
     text-transform: uppercase;
     border-radius: 0.5em;
     border: none;
-    padding: 1.3em 2em;
-    box-shadow: 0px 3px 0px rgba(12, 144, 87, 0.2);
+    padding: 1.2em 0.5em 0.8em 0.5em;
+    box-shadow: 0px 3px 0px rgba(10, 175, 103, 0.5);
+}
+
+input[type=button]:active {
+    background-color: rgb(116, 234, 183);
+}
+
+input[type=button]:hover {
+    cursor: pointer;
 }
 
 .tos-message{
@@ -114,3 +128,52 @@ input[type=button]{
     color: hsl(0, 100%, 74%);
 }
 
+@media (min-width: 990px) {
+    .container {
+        margin-top: 10em;
+        display: grid;
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-areas:
+            "blank-left left right blank-right";
+        }
+    .blank-left{
+        grid-area: blank-right;
+    }
+    
+    .blank-right{
+        grid-area: blank-right;
+    }
+    
+    .left-col {
+        grid-area: left;
+        text-align: left;
+        align-self: center;
+        max-width: 400px;
+    }
+
+    .left-col h1{
+        font-size: xx-large;
+        line-height: 1.2em;
+    }
+
+    .left-col p{
+        font-size: 14px;
+        line-height: 1.7em;
+    }
+
+    .right-col {
+        grid-area: right;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .left-col {
+        max-width: 500px;
+    }
+
+    .left-col h1 {
+        font-size: xxx-large;
+    }
+
+}
