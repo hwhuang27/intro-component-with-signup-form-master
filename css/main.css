@@ -163,7 +163,7 @@ input[type=submit]:hover {
         grid-area: left;
         text-align: left;
         align-self: center;
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .left-col h1{
@@ -184,7 +184,7 @@ input[type=submit]:hover {
 
 @media (min-width: 1260px) {
     .left-col {
-        max-width: 500px;
+        max-width: 400px;
     }
 
     .left-col h1 {
